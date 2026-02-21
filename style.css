@@ -1,0 +1,140 @@
+/* ===== ตั้งค่าพื้นฐาน ===== */
+body {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f3eadc;   /* ครีมงาช้าง */
+    color: #2b1d14;              /* น้ำตาลเข้ม อ่านชัด */
+    line-height: 1.8;
+}
+
+/* ===== Container ===== */
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(to right, #5c3a21, #8b5e34);
+    color: #fff8e7;
+    padding: 25px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* ===== เมนู ===== */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff8e7;
+    margin-right: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd27f;  /* ทองโบราณ */
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(
+        rgba(60,35,20,0.7),
+        rgba(60,35,20,0.7)
+    ),
+    url("images/ยี่เป็ง.jpg") no-repeat center center/cover;
+    color: #fffaf0;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 3px 8px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ===== About Section ===== */
+.about {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.about h2 {
+    color: #5c3a21;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.about p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* ===== Highlights Section ===== */
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 70px 20px;
+    flex-wrap: wrap;
+}
+
+/* ===== Card ===== */
+.card-img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+.card {
+    background: #fffaf0;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: justify;
+}
+
+.card h3 {
+    color: #5c3a21;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    font-weight: 500;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .highlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
